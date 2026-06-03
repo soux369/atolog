@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー / Privacy Policy - あとログ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0B0F19;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-color: #F3F4F6;
+            --text-muted: #9CA3AF;
+            --primary-grad: linear-gradient(135deg, #FF6B00 0%, #FF2D55 100%);
+            --accent-blue: #007AFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 24px;
+        }
+
+        .back-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff 60%, #9CA3AF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 32px;
+            backdrop-filter: blur(12px);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            border-left: 4px solid #FF6B00;
+            padding-left: 12px;
+            color: #fff;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← ホームに戻る / Back to Home</a>
+            <h1>プライバシーポリシー / Privacy Policy</h1>
+            <div class="lang-switch">
+                <a href="#jp" class="lang-btn">日本語</a>
+                <a href="#en" class="lang-btn">English</a>
+            </div>
+        </header>
+
+        <!-- Japanese Section -->
+        <div id="jp" class="section">
+            <h2>日本語版プライバシーポリシー</h2>
+            <p>
+                「あとログ」（以下「本アプリ」）は、ユーザーのプライバシーの保護を最優先事項として設計されています。本アプリが収集するデータおよびその取り扱いについて、以下のように規定します。
+            </p>
+
+            <h3>1. 個人情報の収集と管理について</h3>
+            <p>
+                本アプリは、ユーザーの氏名、メールアドレス、電話番号、ブラウザ閲覧履歴などの個人情報を一切収集、蓄積、または外部サーバーに送信することはありません。
+            </p>
+            <ul>
+                <li><strong>データのローカル保存：</strong> ユーザーが保存したすべてのリンク、タイトル、統計データは、デバイスの内部ストレージ（AsyncStorage）に暗号化された状態でローカルにのみ保存されます。</li>
+                <li><strong>画像のキャッシュ：</strong> リンクのサムネイル画像は、デバイスのローカルメモリ（expo-file-system）にのみダウンロード・保存され、外部に送信・共有されることはありません。</li>
+            </ul>
+
+            <h3>2. 内蔵セキュアブラウザについて</h3>
+            <p>
+                本アプリに内蔵されている「セキュアブラウザ」は、プライバシーに最大限配慮して動作します。
+            </p>
+            <ul>
+                <li>このブラウザで閲覧した履歴、Cookie、フォームの自動入力データなどは一切保存されません。</li>
+                <li>画面キャプチャ・録画防止機能、およびアプリ切り替え時の画面保護シールドにより、第三者によるのぞき見や情報漏洩を防止します。</li>
+            </ul>
+
+            <h3>3. 広告配信について</h3>
+            <p>
+                本アプリでは、無料でのサービス提供および維持のため、Google AdMobを使用して広告を表示しています。
+            </p>
+            <p>
+                AdMobは、広告のパーソナライズや配信状況の測定のために、端末の広告識別子（IDFAやAAIDなど）および匿名の端末情報を収集する場合があります。このデータはGoogleのプライバシーポリシーに基づいて安全に処理されます。詳細およびオプトアウトについては、以下のリンクをご確認ください。
+            </p>
+            <p>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: var(--accent-blue);">Google 広告プライバシーポリシー</a>
+            </p>
+
+            <h3>4. 免責事項</h3>
+            <p>
+                本アプリの利用により生じた直接的、間接的損害、または本アプリから遷移した外部ウェブサイトでのトラブルについて、開発者は一切の責任を負いません。
+            </p>
+
+            <h3>5. お問い合わせ</h3>
+            <p>
+                本ポリシーまたはアプリに関するご質問がございましたら、GitHubリポジトリのIssue等を通じて開発者へご連絡ください。
+            </p>
+        </div>
+
+        <!-- English Section -->
+        <div id="en" class="section">
+            <h2>Privacy Policy (English)</h2>
+            <p>
+                Atolog (referred to as "the App") is committed to protecting your privacy. This Privacy Policy outlines how the App handles your data.
+            </p>
+
+            <h3>1. Collection and Management of Personal Data</h3>
+            <p>
+                The App does not collect, store, or transmit any personally identifiable information (such as name, email address, phone number, or browsing history) to external servers.
+            </p>
+            <ul>
+                <li><strong>Local Storage:</strong> All saved links, titles, metadata, and statistics are stored locally on your device using encrypted storage (AsyncStorage).</li>
+                <li><strong>Local Thumbnails:</strong> Thumbnail images of saved links are cached locally on your device's filesystem (expo-file-system) and are never shared or transmitted externally.</li>
+            </ul>
+
+            <h3>2. Built-in Secure Browser</h3>
+            <p>
+                The App's built-in "Secure Browser" is designed with strict privacy standards.
+            </p>
+            <ul>
+                <li>It does not save your browsing history, cookies, session details, or form inputs.</li>
+                <li>It protects against third-party exposure using screenshot/screen recording prevention and a task-switching screen shield.</li>
+            </ul>
+
+            <h3>3. Advertisement Delivery</h3>
+            <p>
+                To support and maintain the App for free, we use Google AdMob to deliver advertisements.
+            </p>
+            <p>
+                AdMob may collect and process anonymous device identifiers (such as IDFA or AAID) and non-personal diagnostic data to personalize ads and measure campaign performance. This data is handled securely under Google's privacy terms. For more details, please visit:
+            </p>
+            <p>
+                <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: var(--accent-blue);">Google Advertising & Privacy Policy</a>
+            </p>
+
+            <h3>4. Disclaimer</h3>
+            <p>
+                The developer shall not be held liable for any direct or indirect damages arising from the use of the App, or from browsing any third-party websites accessed through the App.
+            </p>
+
+            <h3>5. Contact Us</h3>
+            <p>
+                If you have any questions regarding this policy or the App, please reach out to the developer via the GitHub repository's Issues page.
+            </p>
+        </div>
+
+        <footer>
+            <p>© 2026 あとログ. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
