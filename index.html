@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>あとログ - 「あとで読む」を、もう溜め込まない。</title>
-    <meta name="description" content="あとログ（Atolog）は、あなたの積読や「後で見る」動画の消化を強力にサポートするプライバシー重視のブックマーク管理アプリです。おすすめ3選機能やセキュアブラウザ、オフライン対応のサムネイルキャッシュ、iOSショートカット連携を搭載。">
-    <meta name="keywords" content="あとログ, Atolog, あとで読む, 積読, ブックマーク, セキュアブラウザ, サムネイルキャッシュ, iOSショートカット">
+    <meta name="description" content="あとログ（Atolog）は、積読や「後で見る」動画の消化を強力にサポートするプライバシー重視のブックマーク管理アプリです。おすすめ3選機能やセキュアブラウザ、オフライン対応のサムネイルキャッシュを搭載。">
+    <meta name="keywords" content="あとログ, Atolog, あとで読む, 積読, ブックマーク, セキュアブラウザ, サムネイルキャッシュ">
     <link rel="stylesheet" href="style.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +22,7 @@
 
     <!-- Open Graph Protocol (OGP) -->
     <meta property="og:title" content="あとログ - 「あとで読む」を、もう溜め込まない。">
-    <meta property="og:description" content="積読や「後で見る」動画の消化を強力にサポート。おすすめ3選機能、セキュアブラウザ、サムネイルキャッシュ、iOSショートカット連携を搭載。">
+    <meta property="og:description" content="積読や「後で見る」動画の消化を強力にサポート。おすすめ3選機能、セキュアブラウザ、サムネイルキャッシュを搭載。">
     <meta property="og:image" content="icon.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="あとログ">
@@ -30,124 +30,159 @@
 
 <body>
 
-    <!-- Ambient Grid & Fluid Mesh Background -->
-    <div class="grid-overlay"></div>
-    <div class="mesh-glow mesh-glow-1"></div>
-    <div class="mesh-glow mesh-glow-2"></div>
-    <div class="mesh-glow mesh-glow-3"></div>
+    <!-- Ambient Grid & Fluid Background Glow -->
+    <div class="dot-pattern"></div>
+    <div class="aurora-glow glow-orange"></div>
+    <div class="aurora-glow glow-blue"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
+    <!-- Header Navbar -->
+    <nav class="header-nav">
         <div class="container navbar-container">
-            <a href="#" class="logo">
-                <img src="icon.png" alt="あとログ" class="logo-icon">
-                <span>あとログ</span>
+            <a href="#" class="nav-brand">
+                <img src="icon.png" alt="あとログ" class="brand-icon">
+                <span class="brand-name">あとログ</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#download" class="nav-cta">ダウンロード</a></li>
-            </ul>
+            <a href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%A8%E3%83%AD%E3%82%B0-%E3%81%82%E3%81%A8%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E8%A1%A8%E7%A4%BA/id6759195555" class="btn-download-nav" target="_blank" rel="noopener noreferrer">App Storeで開く</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="hero-tag"><i class="fa-solid fa-sparkles"></i> App Store 提出中 (v1.0.8)</span>
-                <h1>「あとで読む」を、<br><span>もう溜め込まない。</span></h1>
-                <p><span class="nobr">あとログ（Atolog）は、</span><span class="nobr">溜まりがちなブックマークや</span><span class="nobr">「後で見る」動画を確実に</span><span class="nobr">消化するためのアプリです。</span><span class="nobr">美しいUIと</span><span class="nobr">プライバシー防御ブラウザで</span><span class="nobr">快適なインプットを。</span></p>
-                <div class="app-buttons">
-                    <a href="#" class="btn-store">
+    <header class="hero-sec">
+        <div class="container hero-wrap">
+            <div class="hero-info">
+                <span class="hero-badge"><i class="fa-solid fa-cloud-arrow-down"></i> App Store 正式配信中</span>
+                <h1>「あとで読む」を、<br><span>確実に消化する。</span></h1>
+                <p>
+                    あとログ（Atolog）は、溜まりがちなブックマークや「後で見る」動画を確実に消化するためのブックマーク管理アプリです。快適な入力フローとプライバシー保護ブラウザで、あなたのインプット環境を最適化します。
+                </p>
+                <div class="app-action-group">
+                    <a href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%A8%E3%83%AD%E3%82%B0-%E3%81%82%E3%81%A8%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E8%A1%A8%E7%A4%BA/id6759195555" class="hero-cta" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-apple"></i>
-                        <div class="btn-text">
-                            <span class="small-text">Coming soon on</span>
-                            <span class="big-text">App Store</span>
-                        </div>
-                    </a>
-                    <a href="https://www.icloud.com/shortcuts/5d36f9e62f9043fb8826926f4b369603" class="btn-store" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-solid fa-bolt"></i>
-                        <div class="btn-text">
-                            <span class="small-text">Get iOS Shortcut</span>
-                            <span class="big-text">ショートカット追加</span>
+                        <div class="cta-text">
+                            <span class="cta-subtitle">Download on the</span>
+                            <span class="cta-title">App Store</span>
                         </div>
                     </a>
                 </div>
-                <p class="release-note"><i class="fa-solid fa-shield-check"></i> iOS 15.1以降対応 / 広告あり完全無料</p>
             </div>
             
-            <div class="hero-image">
+            <div class="hero-media">
                 <div class="phone-mockup-perspective">
-                    <div class="iphone-frame">
-                        <div class="iphone-screen-area">
-                            <div class="dynamic-island"></div>
-                            <img src="images/screen-home.jpg" alt="あとログ ホーム画面" class="phone-screenshot">
+                    <div class="iphone-mockup">
+                        <div class="iphone-bezel">
+                            <div class="iphone-island"></div>
+                            <img src="images/screen-home.jpg" alt="あとログ ホーム画面" class="iphone-screen">
                             <div class="glass-reflection"></div>
                         </div>
                     </div>
-                    <!-- Floating abstract UI badges for world-class look -->
-                    <div class="floating-badge badge-live"><span></span>おすすめ3選</div>
-                    <div class="floating-badge badge-bell"><i class="fa-solid fa-shield-halved"></i> セキュア保護中</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Interactive App Showcase Section -->
-    <section id="interactive-showcase" class="interactive-sec">
+    <!-- Experience Steps Section -->
+    <section class="experience-sec">
         <div class="container">
-            <div class="section-header-left">
-                <h2>手のひらで、消化をスマートに</h2>
-                <p><span class="nobr">「あとで読む」アイテムを</span><span class="nobr">確実にインプットして</span><span class="nobr">知識に変えるための</span><span class="nobr">3つのアプローチ。</span></p>
+            <div class="section-title-wrap">
+                <h2>ためる、選ぶ、読む。</h2>
+                <p>情報のインプットから消化まで、ストレスのないスムーズな体験をデザインしました。</p>
             </div>
-            
-            <div class="showcase-container">
-                <!-- Interactive Controllers -->
-                <div class="showcase-controls">
-                    <!-- Tab 01 -->
-                    <div class="showcase-tab active" onclick="switchShowcase(0)">
-                        <div class="tab-num">01</div>
-                        <div class="tab-content">
-                            <h3>おすすめ3選を消化</h3>
-                            <p>保存した大量のブックマークから、システムが今消化すべき「3つのアイテム」を厳選表示。選択疲れを防ぎ、消化の第一歩を後押しします。</p>
+
+            <!-- Step 1: Stock -->
+            <div class="step-block">
+                <div class="step-desc">
+                    <div class="step-num"><span></span>Step 01</div>
+                    <h3>ためる：二度手間のない<br>シームレス登録</h3>
+                    <p>
+                        他アプリやSafariの共有メニューから共有するだけで、またはコピーしたURLを持って「あとログ」を起動するだけで、登録モーダルが自動的に最前面に立ち上がります。余計なタップを排除した瞬速のブックマーク体験を提供します。
+                    </p>
+                    <ul class="step-feature-list">
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> 共有メニュー（Share Sheet）対応</li>
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> 起動時のクリップボードURL自動認識</li>
+                    </ul>
+                </div>
+                <div class="step-media">
+                    <div class="iphone-mockup">
+                        <div class="iphone-bezel">
+                            <div class="iphone-island"></div>
+                            <img src="images/screen-home.jpg" alt="URL自動認識登録" class="iphone-screen">
+                            <div class="glass-reflection"></div>
                         </div>
-                        <div class="tab-progress-bar"><div class="progress"></div></div>
                     </div>
-                    
-                    <!-- Tab 02 -->
-                    <div class="showcase-tab" onclick="switchShowcase(1)">
-                        <div class="tab-num">02</div>
-                        <div class="tab-content">
-                            <h3>安全なプライバシーブラウザ</h3>
-                            <p>外部広告やトラッカー、位置情報アクセスを完全に遮断。さらに画面キャプチャ防止やアプリ目隠しシールドを完備した極秘閲覧ブラウザを内蔵。</p>
+                    <div class="detail-status-card">
+                        <div class="status-header">
+                            <span>登録ステータス</span>
+                            <span class="status-circle"></span>
                         </div>
-                        <div class="tab-progress-bar"><div class="progress"></div></div>
-                    </div>
-                    
-                    <!-- Tab 03 -->
-                    <div class="showcase-tab" onclick="switchShowcase(2)">
-                        <div class="tab-num">03</div>
-                        <div class="tab-content">
-                            <h3>サムネイルをローカルに保存</h3>
-                            <p>保存時にサムネイル画像を自動的にスマホ内へ永久キャッシュ。元のサイトが画像パスを変更したり、オフライン状態でもリストの見た目を美しく維持します。</p>
+                        <div class="status-row">
+                            <span class="status-label">URL自動取得</span>
+                            <span class="status-value green">完了</span>
                         </div>
-                        <div class="tab-progress-bar"><div class="progress"></div></div>
+                        <div class="status-row">
+                            <span class="status-label">入力項目</span>
+                            <span class="status-value">自動抽出</span>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Interactive Phone Simulator -->
-                <div class="showcase-simulator">
-                    <div class="simulator-wrapper">
-                        <div class="simulator-phone">
-                            <div class="simulator-screen-area">
-                                <div class="dynamic-island"></div>
-                                <!-- Slidable Screen Track -->
-                                <div class="screen-track" id="screenTrack">
-                                    <img src="images/screen-home.jpg" alt="おすすめ3選画面" class="simulator-image">
-                                    <img src="images/screen-detail.jpg" alt="内蔵セキュアブラウザ画面" class="simulator-image">
-                                    <img src="images/screen-home.jpg" alt="ローカルサムネイルキャッシュ画面" class="simulator-image">
-                                </div>
-                                <div class="glass-reflection"></div>
-                            </div>
+            </div>
+
+            <!-- Step 2: Select -->
+            <div class="step-block reverse">
+                <div class="step-desc">
+                    <div class="step-num"><span></span>Step 02</div>
+                    <h3>選ぶ：選択ストレスを<br>完全ゼロにする「3選」</h3>
+                    <p>
+                        「溜め込みすぎて何から手をつければいいか分からない」という問題を解決します。あとログは、あなたのリストから今消化すべき「3つのアイテム」だけを厳選して提示。余計な情報を見せず、集中してインプットに向き合える環境を作ります。
+                    </p>
+                    <ul class="step-feature-list">
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> 意思決定の負担を最小化</li>
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> 消化するリズムの定着</li>
+                    </ul>
+                </div>
+                <div class="step-media">
+                    <div class="iphone-mockup">
+                        <div class="iphone-bezel">
+                            <div class="iphone-island"></div>
+                            <img src="images/screen-home.jpg" alt="おすすめ3選画面" class="iphone-screen">
+                            <div class="glass-reflection"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Read -->
+            <div class="step-block">
+                <div class="step-desc">
+                    <div class="step-num"><span></span>Step 03</div>
+                    <h3>読む：覗き見を防ぐ<br>プライバシーブラウザ</h3>
+                    <p>
+                        アプリ内に独自の超安全ブラウザを完備。クッキーや外部トラッカーの追跡をすべてカットし、画面キャプチャの防止機能、さらにバックグラウンドへ移行した際にリスト画面を目隠しする「プライバシーシールド」で、あなたの読書を守ります。
+                    </p>
+                    <ul class="step-feature-list">
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> スクリーンショット撮影の完全ブロック</li>
+                        <li class="step-feature-item"><i class="fa-solid fa-circle-check"></i> バックグラウンド時の目隠しシールド</li>
+                    </ul>
+                </div>
+                <div class="step-media">
+                    <div class="iphone-mockup">
+                        <div class="iphone-bezel">
+                            <div class="iphone-island"></div>
+                            <img src="images/screen-detail.jpg" alt="内蔵セキュアブラウザ画面" class="iphone-screen">
+                            <div class="glass-reflection"></div>
+                        </div>
+                    </div>
+                    <div class="detail-status-card" style="border-color: rgba(10, 132, 255, 0.2);">
+                        <div class="status-header">
+                            <span>セキュリティ強度</span>
+                            <span class="status-circle" style="background: var(--accent-blue);"></span>
+                        </div>
+                        <div class="status-row">
+                            <span class="status-label">スクショ防止</span>
+                            <span class="status-value" style="color: var(--accent-blue);">アクティブ</span>
+                        </div>
+                        <div class="status-row">
+                            <span class="status-label">画面シールド</span>
+                            <span class="status-value" style="color: var(--accent-blue);">有効</span>
                         </div>
                     </div>
                 </div>
@@ -155,190 +190,50 @@
         </div>
     </section>
 
-    <!-- Bento Grid Features Section -->
-    <section id="features" class="features-sec">
+    <!-- Detailed Features Grid Section -->
+    <section class="features-grid-sec">
         <div class="container">
-            <div class="section-header">
-                <h2>毎日をよりスマートにする機能</h2>
-                <p>ため込むだけのインプットから、確実に消化するアウトプットへの移行をサポートします。</p>
+            <div class="section-title-wrap">
+                <h2>細部までこだわり抜いた独自機能</h2>
+                <p>ただのリンク集ではない、快適な体験と信頼性のためのアプローチ。</p>
             </div>
             
-            <div class="bento-grid">
-                <!-- Card 1: iOS Shortcuts (Wide) -->
-                <div class="bento-card bento-wide">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-orange"><i class="fa-solid fa-bolt"></i></div>
-                        <h3>iOS ショートカット連携＆共有シート対応</h3>
-                        <p>Safariなどで見ているページの共有メニューから、専用のショートカットを選ぶだけで瞬時に入力欄が pre-fill（自動入力）され、シームレスに登録が完了します。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-notification-stack">
-                            <div class="noti-stack-item noti-stack-item-1">
-                                <div class="noti-dot" style="background-color: var(--accent-blue);"></div>
-                                <div class="noti-text">
-                                    <h4>Safariで共有シートを開く</h4>
-                                    <p>「あとで読む」ショートカットを実行</p>
-                                </div>
-                            </div>
-                            <div class="noti-stack-item noti-stack-item-2">
-                                <div class="noti-dot" style="background-color: var(--accent-purple);"></div>
-                                <div class="noti-text">
-                                    <h4>URLを自動抽出</h4>
-                                    <p>https://example.com/article をクリップボードへ</p>
-                                </div>
-                            </div>
-                            <div class="noti-stack-item noti-stack-item-3">
-                                <div class="noti-dot"></div>
-                                <div class="noti-text">
-                                    <h4>あとログが自動起動</h4>
-                                    <p>登録モーダルにURLが事前入力された状態で立ち上がります</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="custom-grid">
+                <!-- Card 1 -->
+                <div class="custom-card">
+                    <div class="card-icon"><i class="fa-solid fa-image"></i></div>
+                    <h3>サムネイルをローカル保存</h3>
+                    <p>ブックマーク追加時にサムネイル画像を自動的に抽出・端末内に直接保存（キャッシュ）します。元サイトの画像が削除されたり、通信状況が悪い場所でも、リストの美しい見た目を損ないません。</p>
                 </div>
                 
-                <!-- Card 2: Local Cache (Square) -->
-                <div class="bento-card">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-blue"><i class="fa-solid fa-image"></i></div>
-                        <h3>サムネイルキャッシュ</h3>
-                        <p>Webコンテンツの画像をローカルファイルシステムにダウンロード保存。有効期限切れや通信制限下でも画像が消える心配はありません。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-thumbnail-caching">
-                            <div class="thumb-row">
-                                <div class="thumb-box"><i class="fa-solid fa-newspaper"></i></div>
-                                <div class="thumb-text">
-                                    <div class="thumb-title">ニュース記事</div>
-                                    <div class="thumb-status"><i class="fa-solid fa-circle-check"></i> Cached Locally</div>
-                                </div>
-                            </div>
-                            <div class="thumb-row">
-                                <div class="thumb-box"><i class="fa-solid fa-video"></i></div>
-                                <div class="thumb-text">
-                                    <div class="thumb-title">後で見る動画</div>
-                                    <div class="thumb-status"><i class="fa-solid fa-circle-check"></i> Cached Locally</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Card 2 -->
+                <div class="custom-card">
+                    <div class="card-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>0ms起動の快適性</h3>
+                    <p>ローカルデータベース駆動で設計されているため、アプリの起動時やリストスクロール時にネットワーク通信を待つ必要がありません。瞬時に開き、一瞬で操作可能です。</p>
                 </div>
                 
-                <!-- Card 3: Secure Shield (Square) -->
-                <div class="bento-card">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-red"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3>プライバシーシールド</h3>
-                        <p>アプリがバックエンドに移行した際、画面を隠すシールド処理を搭載。パスコード不要であなたの積読リストのプライバシーを保護します。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-secure-shield">
-                            <div class="secure-shield-icon">
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
-                            <div class="secure-list">
-                                <div class="secure-item">
-                                    <span>画面隠しシールド</span>
-                                    <span>有効</span>
-                                </div>
-                                <div class="secure-item">
-                                    <span>スクショ防止</span>
-                                    <span>ブロック</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 4: Webview Guard (Wide) -->
-                <div class="bento-card bento-wide">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-purple"><i class="fa-solid fa-compass"></i></div>
-                        <h3>セキュアWebViewブラウザ</h3>
-                        <p>内蔵ブラウザはプライバシー第一。不要なクッキーの蓄積やトラッキング、位置情報の特定を完全にカットし、完全に独立したクリアな環境でブラウジングが行えます。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-webview-sim">
-                            <div class="webview-header">
-                                <div class="webview-dots">
-                                    <div class="webview-dot"></div>
-                                    <div class="webview-dot" style="background-color: #ef4444;"></div>
-                                    <div class="webview-dot" style="background-color: #34C759;"></div>
-                                </div>
-                                <div class="webview-address-bar" style="background-color: #1e293b;">
-                                    <i class="fa-solid fa-shield-halved" style="color: var(--accent-orange);"></i>
-                                    <span style="color: #94a3b8;">atolog.secure-browser://...</span>
-                                </div>
-                            </div>
-                            <div class="webview-content" style="background-color: #0b0f19;">
-                                <div class="webview-video" style="background-color: #111827;">
-                                    <div class="player-play-btn" style="background-color: var(--accent-orange); border-color: var(--accent-orange);"><i class="fa-solid fa-lock"></i></div>
-                                </div>
-                                <div class="webview-chat" style="background-color: #1f2937;">
-                                    <div class="chat-bubble-sim" style="background-color: #374151;"></div>
-                                    <div class="chat-bubble-sim" style="background-color: #4b5563; width: 50%;"></div>
-                                    <div class="chat-bubble-sim" style="background-color: #374151; width: 70%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5: Smart Tags (Square) -->
-                <div class="bento-card">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-orange"><i class="fa-solid fa-tags"></i></div>
-                        <h3>インテリジェントタグ分類</h3>
-                        <p>保存したURLをカテゴリや用途に応じてタグで整理。いつでも目的のアイテムを素早く検索・フィルタリングできます。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-memo-stack">
-                            <div class="memo-card-sim memo-card-sim-2" style="background: rgba(10, 132, 255, 0.1); border-color: rgba(10, 132, 255, 0.2);">
-                                <h4 style="color: #fff;">後で見たい動画</h4>
-                                <p style="color: #94a3b8;">YouTubeの解説プレイリスト</p>
-                                <span class="memo-tag-sim" style="background: rgba(10, 132, 255, 0.2); color: var(--accent-blue);">#動画</span>
-                            </div>
-                            <div class="memo-card-sim" style="background: rgba(255, 107, 0, 0.1); border-color: rgba(255, 107, 0, 0.2);">
-                                <h4 style="color: #fff;">気になる技術記事</h4>
-                                <p style="color: #94a3b8;">React Nativeの公式ドキュメント</p>
-                                <span class="memo-tag-sim" style="background: rgba(255, 107, 0, 0.2); color: var(--accent-orange);">#技術</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 6: Zero Delay (Square) -->
-                <div class="bento-card">
-                    <div class="bento-text">
-                        <div class="icon-wrapper icon-blue"><i class="fa-solid fa-gauge-high"></i></div>
-                        <h3>ゼロ遅延・高速起動</h3>
-                        <p>ローカルデータベース駆動のため、起動時のロード時間はわずか数ミリ秒。ネットが遅い環境でもストレスなく瞬時にアプリが立ち上がります。</p>
-                    </div>
-                    <div class="bento-visual">
-                        <div class="visual-sync">
-                            <div class="sync-loader" style="border-top-color: var(--accent-orange);">
-                                <i class="fa-solid fa-gauge-high"></i>
-                            </div>
-                            <span class="sync-status-badge" style="background: rgba(255, 107, 0, 0.08); border-color: rgba(255, 107, 0, 0.2); color: var(--accent-orange);">0ms Loaded</span>
-                        </div>
-                    </div>
+                <!-- Card 3 -->
+                <div class="custom-card">
+                    <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>外部送信ゼロの安全性</h3>
+                    <p>あなたが保存したURL、履歴、メモ、タグなどのデータは、一切外部サーバーに送信されません。すべての情報はスマートフォン内部で完結し、完全な匿名性とプライバシーが約束されます。</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Download Call To Action Section -->
-    <section id="download" class="cta">
-        <div class="cta-inner container">
+    <section id="download" class="cta-sec">
+        <div class="container cta-inner">
             <h2>積読の山を、インプットに変えよう。</h2>
-            <p><span class="nobr">あとログで、</span><span class="nobr">情報の収集と消化を</span><span class="nobr">よりスマートに管理しましょう。</span></p>
-            <div class="app-buttons">
-                <a href="#" class="btn-store">
+            <p>あとログをダウンロードして、スマートな情報の消化を今すぐ体験しましょう。</p>
+            <div class="app-action-group" style="justify-content: center; display: flex;">
+                <a href="https://apps.apple.com/jp/app/%E3%81%82%E3%81%A8%E3%83%AD%E3%82%B0-%E3%81%82%E3%81%A8%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E8%A1%A8%E7%A4%BA/id6759195555" class="hero-cta" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-apple"></i>
-                    <div class="btn-text">
-                        <span class="small-text">Coming soon on</span>
-                        <span class="big-text">App Store</span>
+                    <div class="cta-text">
+                        <span class="cta-subtitle">Download on the</span>
+                        <span class="cta-title">App Store</span>
                     </div>
                 </a>
             </div>
@@ -347,60 +242,15 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <h3>あとログ</h3>
+        <div class="container footer-wrap">
+            <div class="footer-info">
                 <p>&copy; 2026 あとログ. All Rights Reserved.</p>
             </div>
-            <div class="footer-center">
-                <p class="disclaimer">プライバシーに配慮し、あなたの行動履歴や閲覧したURL等のデータは一切外部サーバーに送信せず、端末内で安全に処理されます。</p>
-            </div>
-            <div class="footer-right">
-                <ul class="footer-links">
-                    <li><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></li>
-                </ul>
+            <div class="footer-links">
+                <a href="privacy.html" class="footer-privacy-link">プライバシーポリシー / Privacy Policy</a>
             </div>
         </div>
     </footer>
-
-    <!-- Interactive Showcase Logic (Vanilla JS) -->
-    <script>
-        const track = document.getElementById('screenTrack');
-        const tabs = document.querySelectorAll('.showcase-tab');
-        let currentIndex = 0;
-        let autoplayTimer = null;
-
-        function switchShowcase(index) {
-            // Update active state of tabs
-            tabs.forEach((tab, idx) => {
-                if (idx === index) {
-                    tab.classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                }
-            });
-
-            // Slide the screen track
-            track.style.transform = `translateX(-${index * 100}%)`;
-            currentIndex = index;
-
-            // Reset autoplay timer when user manually interacts
-            resetAutoplay();
-        }
-
-        function autoplay() {
-            let nextIndex = (currentIndex + 1) % tabs.length;
-            switchShowcase(nextIndex);
-        }
-
-        function resetAutoplay() {
-            clearInterval(autoplayTimer);
-            autoplayTimer = setInterval(autoplay, 7000); // Autoplay every 7 seconds
-        }
-
-        // Initialize autoplay on load
-        resetAutoplay();
-    </script>
 
 </body>
 
