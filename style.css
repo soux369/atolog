@@ -44,6 +44,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -52,7 +54,15 @@ body {
     background-color: var(--bg-abyss);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     letter-spacing: -0.01em;
+}
+
+.page-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .container {
@@ -108,13 +118,19 @@ body {
     height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid var(--border-glass);
     background: rgba(3, 4, 7, 0.7);
     backdrop-filter: blur(15px);
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-brand {
